@@ -14,8 +14,4 @@ if usergoal > 30:
 else: mathgoal = int(level[usergoal])
 mathreq = mathgoal - mathlev - userexp
 
-<<<<<<< HEAD
 print('You need {reqexp} EXP to hit level {goal} from your current level {level}. \nIt will take an average of {fl} Frontlines matches or {cc} rounds of CC.'.format(reqexp = mathreq, goal = usergoal, level = userlev, fl = round(mathreq/flexp+0.5), cc = round(mathreq/ccexp+0.5)))
-=======
-print('You need {reqexp} EXP to hit level {goal} from your current level {level}. \nIt will take {fl} Frontlines matches or {cc} rounds of CC.'.format(reqexp = mathreq, goal = usergoal, level = userlev, fl = round(mathreq/flexp+0.5), cc = round(mathreq/ccexp+0.5)))
->>>>>>> d09141dd17c4780a7d98dd5727ea4b29099fdade
