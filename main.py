@@ -3,7 +3,7 @@ flexp = 1250
 ccexp = 800
 
 userlev = int(input('What PVP level are you? (max 30, default 1) ') or 1)
-usergoal = int(input('What PVP level do you want to be? (no max, default 25)') or 25)
+usergoal = int(input('What PVP level do you want to be? (no max, default 25) ') or 25)
 userexp = int(input('How much series EXP do you have? (0 if you don\'t know, default 0) ') or 0)
 
 mathlev = int(level[userlev])
