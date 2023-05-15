@@ -3,7 +3,7 @@ flexp = 1250
 ccexp = 800
 
 userlev = int(input('What PVP level are you? (max 30, default 1) ') or 1)
-usergoal = int(input('What PVP level do you want to be? (no max, default 25)') or 25)
+usergoal = int(input('What PVP level do you want to be? (no max, default 25) ') or 25)
 userexp = int(input('How much series EXP do you have? (0 if you don\'t know, default 0) ') or 0)
 
 mathlev = int(level[userlev])
@@ -14,4 +14,4 @@ if usergoal > 30:
 else: mathgoal = int(level[usergoal])
 mathreq = mathgoal - mathlev - userexp
 
-print('You need {reqexp} EXP to hit level {goal} from your current level {level}. \nIt will take {fl} Frontlines matches or {cc} rounds of CC.'.format(reqexp = mathreq, goal = usergoal, level = userlev, fl = round(mathreq/flexp+0.5), cc = round(mathreq/ccexp+0.5)))
+print('You need {reqexp} EXP to hit level {goal} from your current level {level}. \nIt will take an average of {fl} Frontlines matches or {cc} rounds of CC.'.format(reqexp = mathreq, goal = usergoal, level = userlev, fl = round(mathreq/flexp+0.5), cc = round(mathreq/ccexp+0.5)))
